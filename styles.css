@@ -7,7 +7,7 @@
     --accent-light: #ff7b72;
     --card-bg-light: #f4f4f4;
     --border-light: #e0e0e0;
-    
+
     /* Dark mode colors */
     --background-dark: #121212;
     --text-dark: #f0f0f0;
@@ -16,7 +16,7 @@
     --accent-dark: #ff7b72;
     --card-bg-dark: #1e1e1e;
     --border-dark: #333333;
-    
+
     /* Default to light mode */
     --background: var(--background-light);
     --text: var(--text-light);
@@ -25,7 +25,7 @@
     --accent: var(--accent-light);
     --card-bg: var(--card-bg-light);
     --border: var(--border-light);
-    
+
     --max-width: 1200px;
     --transition: all 0.3s ease;
 }
@@ -323,9 +323,11 @@ img {
     0% {
         transform: translate(0, 0);
     }
+
     50% {
         transform: translate(20px, -20px);
     }
+
     100% {
         transform: translate(0, 0);
     }
@@ -339,13 +341,25 @@ img {
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--primary) }
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--primary)
+    }
 }
 
 /* About Section */
@@ -387,11 +401,9 @@ img {
 }
 
 .about-image:hover img {
-    transform: translate(-10px, -10px);
-}
-
-.about-image:hover .image-backdrop {
-    transform: translate(10px, 10px);
+    transform: scale(1.05);
+    border: 2px solid;
+    border-color: var(--primary);
 }
 
 .about-text {
@@ -510,7 +522,8 @@ img {
     transition: var(--transition);
 }
 
-.filter-btn:hover, .filter-btn.active {
+.filter-btn:hover,
+.filter-btn.active {
     background: var(--primary);
     color: #fff;
     border-color: var(--primary);
@@ -724,7 +737,7 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .project-link {
         width: 40px;
         height: 40px;
@@ -743,11 +756,11 @@ footer {
     .skill-card {
         padding: 20px;
     }
-    
+
     .projects-filter {
         gap: 10px;
     }
-    
+
     .filter-btn {
         padding: 6px 15px;
         font-size: 0.9rem;
